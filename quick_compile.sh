@@ -158,10 +158,10 @@ compile_uboot(){
         ./mk $platform_uboot_name --systemroot $platform_avb_param;
     fi
 
-    cp build/u-boot.bin ../../device/khadas/$platform_name/bootloader.img;
-    cp build/u-boot.bin.usb.bl2 ../../device/khadas/$platform_name/upgrade/u-boot.bin.usb.bl2;
-    cp build/u-boot.bin.usb.tpl ../../device/khadas/$platform_name/upgrade/u-boot.bin.usb.tpl;
-    cp build/u-boot.bin.sd.bin ../../device/khadas/$platform_name/upgrade/u-boot.bin.sd.bin;
+    cp build/u-boot.bin ../../device/amlogic/$platform_name/bootloader.img;
+    cp build/u-boot.bin.usb.bl2 ../../device/amlogic/$platform_name/upgrade/u-boot.bin.usb.bl2;
+    cp build/u-boot.bin.usb.tpl ../../device/amlogic/$platform_name/upgrade/u-boot.bin.usb.tpl;
+    cp build/u-boot.bin.sd.bin ../../device/amlogic/$platform_name/upgrade/u-boot.bin.sd.bin;
 }
 
 if [ $# -eq 1 ]; then
