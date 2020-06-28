@@ -91,7 +91,6 @@ on boot
     chown system mediadrm /sys/class/amhdmitx/amhdmitx0/aud_ch
     chmod 0664 /sys/class/amhdmitx/amhdmitx0/aud_ch
     insmod  /vendor/lib/modules/aml_thermal.ko
-    #insmod  /vendor/lib/modules/ddr_window_64.ko
 
     chown media system /sys/class/tsync/pts_video
     chown mediadrm audio /sys/class/tsync/pts_audio
